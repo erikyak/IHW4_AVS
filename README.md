@@ -64,17 +64,125 @@ Bee swarm 1 is searching section 3
 Bee swarm 2 found and punished Winnie the Pooh in section 5
 All bee swarms have returned to the hive.
 ```
+### Скриншоты начала и конца работы ввода с клавиатуры
+<img width="671" alt="Снимок экрана 2024-12-17 в 23 47 44" src="https://github.com/user-attachments/assets/235fa83c-8719-4a31-977e-1621d46994fb" />
+<img width="681" alt="Снимок экрана 2024-12-17 в 23 47 51" src="https://github.com/user-attachments/assets/e8569a1a-4819-4d98-b81e-da0ec7a2ecf1" />
+
 
 ## На 6-7 баллов
+### Обобщённый алгоритм
+Инициализация:
+- Чтение данных из файла, консоли или генерация случайных значений.
+- Заполнение очереди задач секциями леса.   
+Создание потоков:
+- Создаются потоки для каждого роя пчёл.   
+Поиск:
+- Поток проверяет секцию и сравнивает с местоположением Винни Пуха
+- При обнаружении устанавливается флаг завершения.   
+Завершение:
+- Все потоки завершают работу, программа выводит результаты.   
+  
+### Генерация случайных данных
+Генерация параметров:
+```
+std::random_device rd;
+std::mt19937 gen(rd());
+std::uniform_int_distribution<> sections(1, 10000);
+std::uniform_int_distribution<> bees(1, 1000);
+```
+Пример случайного ввода:
+
+```
+Forest size: 2624
+Number of bee swarms: 259
+Winnie the Pooh is hiding in section: 2154
+```
+### Скриншоты начала и конца работы случайного ввода
+<img width="712" alt="Снимок экрана 2024-12-17 в 23 46 25" src="https://github.com/user-attachments/assets/6d3e8dbc-7fef-4f03-bcb5-5c1ad6cfd9ee" />
+<img width="685" alt="Снимок экрана 2024-12-17 в 23 46 39" src="https://github.com/user-attachments/assets/d40855ed-5970-4dd9-b51f-1544e89f319e" />
 
 
+### Ввод данных из командной строки
+Добавлена возможность ввода через аргументы командной строки:
+```
+./program --file input.txt
+```
 ## На 8 баллов
+### Вывод результатов в файл
+Добавлен вывод результатов в файл. Имя файла задаётся через аргумент:
+```
+./program --file ../input/test.txt --output ../output/test_output.txt
+```
+Файл test_output.txt можно найти в папке output
 
+### Скриншоты начала и конца работы ввода через файл test.txt
+<img width="545" alt="Снимок экрана 2024-12-17 в 23 44 01" src="https://github.com/user-attachments/assets/13d54578-e1ea-4c56-99a6-b9688fe9e21b" />
+<img width="705" alt="Снимок экрана 2024-12-17 в 23 44 13" src="https://github.com/user-attachments/assets/054e0d50-f0e1-4336-b1d2-9e6bbd923f2b" />
 
+### Скриншоты начала и конца работы ввода через файл two_bees.txt
+<img width="508" alt="Снимок экрана 2024-12-17 в 23 45 39" src="https://github.com/user-attachments/assets/1587d074-f8fc-4488-95a2-40be106f4db7" />
+<img width="689" alt="Снимок экрана 2024-12-17 в 23 45 46" src="https://github.com/user-attachments/assets/d0e7dbd6-54c4-4cf6-80d6-3496e541ae5a" />
 
 ## На 9 баллов
+Альтернативное решение (Solution_on_9.cpp):
 
+### Синхронизация:
+std::mutex защищает доступ к очереди задач.   
+std::condition_variable уведомляет потоки о новых задачах.   
+std::atomic<bool> используется для флагов завершения и нахождения Винни.   
+### Реализация:
+Потоки создаются с использованием std::thread, а не POSIX Threads.
+```
+std::vector<std::thread> threads;
+for (int i = 0; i < num_bees; ++i) {
+    threads.emplace_back(bee_task, i + 1);
+}
+```
+### Сравнение с POSIX Threads:
+Код становится более читабельным благодаря использованию высокоуровневых инструментов C++.   
+Производительность аналогична при небольшом количестве потоков.
 
 ## На 10 баллов
+### Реализация с использованием OpenMP
+Добавлена версия с OpenMP, позволяющая распараллелить обработку секций.
+```
+#pragma omp parallel num_threads(num_bees)
+    {
+        int bee_id = omp_get_thread_num() + 1;
+        std::ostringstream log;
 
+        while (!winnie_found) {
+            int task_id = -1;
+
+            // Retrieve a task from the queue
+            {
+                std::lock_guard<std::mutex> lock(task_mutex);
+                if (!task_queue.empty()) {
+                    task_id = task_queue.front();
+                    task_queue.pop();
+                }
+            }
+
+            if (task_id != -1) {
+                process_task(bee_id, task_id, log);
+            } else {
+                break; // Exit if there are no more tasks
+            }
+        }
+
+#pragma omp critical
+        {
+            std::cout << log.str();
+            if (write_to_file) {
+                output_file << log.str();
+            }
+        }
+    }
+```
+### Сравнение производительности
+|Параметр|POSIX Threads|OpenMP|
+|-------------|-------------|-------------|
+|Простота реализации|Средняя|Высокая|
+|Производительность|Высокая|Отличная|
+|Количество строк кода|Больше|Меньше|
 </details>
