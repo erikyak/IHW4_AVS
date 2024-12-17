@@ -1,0 +1,116 @@
+Data read from file ../input/two_bees.txt:
+Forest size: 100
+Number of bee swarms: 2
+Winnie the Pooh is hiding in section: 54
+Bee swarm 1 is searching section 1
+Bee swarm 1 did not find Winnie the Pooh in section 1 and returned to the hive
+Bee swarm 2 is searching section 2
+Bee swarm 2 did not find Winnie the Pooh in section 2 and returned to the hive
+Bee swarm 1 is searching section 3
+Bee swarm 1 did not find Winnie the Pooh in section 3 and returned to the hive
+Bee swarm 2 is searching section 4
+Bee swarm 2 did not find Winnie the Pooh in section 4 and returned to the hive
+Bee swarm 1 is searching section 5
+Bee swarm 1 did not find Winnie the Pooh in section 5 and returned to the hive
+Bee swarm 2 is searching section 6
+Bee swarm 2 did not find Winnie the Pooh in section 6 and returned to the hive
+Bee swarm 1 is searching section 7
+Bee swarm 1 did not find Winnie the Pooh in section 7 and returned to the hive
+Bee swarm 2 is searching section 8
+Bee swarm 2 did not find Winnie the Pooh in section 8 and returned to the hive
+Bee swarm 1 is searching section 9
+Bee swarm 1 did not find Winnie the Pooh in section 9 and returned to the hive
+Bee swarm 2 is searching section 10
+Bee swarm 2 did not find Winnie the Pooh in section 10 and returned to the hive
+Bee swarm 1 is searching section 11
+Bee swarm 1 did not find Winnie the Pooh in section 11 and returned to the hive
+Bee swarm 2 is searching section 12
+Bee swarm 2 did not find Winnie the Pooh in section 12 and returned to the hive
+Bee swarm 1 is searching section 13
+Bee swarm 1 did not find Winnie the Pooh in section 13 and returned to the hive
+Bee swarm 2 is searching section 14
+Bee swarm 2 did not find Winnie the Pooh in section 14 and returned to the hive
+Bee swarm 1 is searching section 15
+Bee swarm 1 did not find Winnie the Pooh in section 15 and returned to the hive
+Bee swarm 1 is searching section 17
+Bee swarm 1 did not find Winnie the Pooh in section 17 and returned to the hive
+Bee swarm 2 is searching section 16
+Bee swarm 2 did not find Winnie the Pooh in section 16 and returned to the hive
+Bee swarm 1 is searching section 18
+Bee swarm 1 did not find Winnie the Pooh in section 18 and returned to the hive
+Bee swarm 2 is searching section 19
+Bee swarm 2 did not find Winnie the Pooh in section 19 and returned to the hive
+Bee swarm 1 is searching section 20
+Bee swarm 1 did not find Winnie the Pooh in section 20 and returned to the hive
+Bee swarm 2 is searching section 21
+Bee swarm 2 did not find Winnie the Pooh in section 21 and returned to the hive
+Bee swarm 1 is searching section 22
+Bee swarm 1 did not find Winnie the Pooh in section 22 and returned to the hive
+Bee swarm 2 is searching section 23
+Bee swarm 2 did not find Winnie the Pooh in section 23 and returned to the hive
+Bee swarm 1 is searching section 24
+Bee swarm 1 did not find Winnie the Pooh in section 24 and returned to the hive
+Bee swarm 1 is searching section 26
+Bee swarm 1 did not find Winnie the Pooh in section 26 and returned to the hive
+Bee swarm 2 is searching section 25
+Bee swarm 2 did not find Winnie the Pooh in section 25 and returned to the hive
+Bee swarm 1 is searching section 27
+Bee swarm 1 did not find Winnie the Pooh in section 27 and returned to the hive
+Bee swarm 2 is searching section 28
+Bee swarm 2 did not find Winnie the Pooh in section 28 and returned to the hive
+Bee swarm 1 is searching section 29
+Bee swarm 1 did not find Winnie the Pooh in section 29 and returned to the hive
+Bee swarm 2 is searching section 30
+Bee swarm 2 did not find Winnie the Pooh in section 30 and returned to the hive
+Bee swarm 1 is searching section 31
+Bee swarm 1 did not find Winnie the Pooh in section 31 and returned to the hive
+Bee swarm 2 is searching section 32
+Bee swarm 2 did not find Winnie the Pooh in section 32 and returned to the hive
+Bee swarm 1 is searching section 33
+Bee swarm 1 did not find Winnie the Pooh in section 33 and returned to the hive
+Bee swarm 2 is searching section 34
+Bee swarm 2 did not find Winnie the Pooh in section 34 and returned to the hive
+Bee swarm 1 is searching section 35
+Bee swarm 1 did not find Winnie the Pooh in section 35 and returned to the hive
+Bee swarm 2 is searching section 36
+Bee swarm 2 did not find Winnie the Pooh in section 36 and returned to the hive
+Bee swarm 1 is searching section 37
+Bee swarm 1 did not find Winnie the Pooh in section 37 and returned to the hive
+Bee swarm 2 is searching section 38
+Bee swarm 2 did not find Winnie the Pooh in section 38 and returned to the hive
+Bee swarm 1 is searching section 39
+Bee swarm 1 did not find Winnie the Pooh in section 39 and returned to the hive
+Bee swarm 2 is searching section 40
+Bee swarm 2 did not find Winnie the Pooh in section 40 and returned to the hive
+Bee swarm 1 is searching section 41
+Bee swarm 1 did not find Winnie the Pooh in section 41 and returned to the hive
+Bee swarm 2 is searching section 42
+Bee swarm 2 did not find Winnie the Pooh in section 42 and returned to the hive
+Bee swarm 1 is searching section 43
+Bee swarm 1 did not find Winnie the Pooh in section 43 and returned to the hive
+Bee swarm 2 is searching section 44
+Bee swarm 2 did not find Winnie the Pooh in section 44 and returned to the hive
+Bee swarm 1 is searching section 45
+Bee swarm 1 did not find Winnie the Pooh in section 45 and returned to the hive
+Bee swarm 2 is searching section 46
+Bee swarm 2 did not find Winnie the Pooh in section 46 and returned to the hive
+Bee swarm 1 is searching section 47
+Bee swarm 1 did not find Winnie the Pooh in section 47 and returned to the hive
+Bee swarm 2 is searching section 48
+Bee swarm 2 did not find Winnie the Pooh in section 48 and returned to the hive
+Bee swarm 2 is searching section 50
+Bee swarm 2 did not find Winnie the Pooh in section 50 and returned to the hive
+Bee swarm 1 is searching section 49
+Bee swarm 1 did not find Winnie the Pooh in section 49 and returned to the hive
+Bee swarm 2 is searching section 51
+Bee swarm 2 did not find Winnie the Pooh in section 51 and returned to the hive
+Bee swarm 1 is searching section 52
+Bee swarm 1 did not find Winnie the Pooh in section 52 and returned to the hive
+Bee swarm 2 is searching section 53
+Bee swarm 2 did not find Winnie the Pooh in section 53 and returned to the hive
+Bee swarm 1 is searching section 54
+Bee swarm 1 found and punished Winnie the Pooh in section 54
+Bee swarm 2 is searching section 55
+Bee swarm 2 did not find Winnie the Pooh in section 55 and returned to the hive
+All bee swarms have returned to the hive.
+Winnie the Pooh was found by bee swarm 1 in section 54.
